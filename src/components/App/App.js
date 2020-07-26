@@ -11,10 +11,14 @@ const App = () => (
   <BrowserRouter>
     <MainLayout>
       <AnimatedSwitch
-        atEnter={{ opacity: 0 }}
-        atLeave={{ opacity: 0 }}
-        atActive={{ opacity: 1 }}
-        className={styles.switchWrapper}
+        atEnter={{ translateY: 200, opacity: 0 }}
+        atLeave={{ translateY: 0, opacity: 0 }}
+        atActive={{ translateY: 0, opacity: 1 }}
+        mapStyles={styles => ({
+          transform: `translateY(${styles.translateY}px)`,
+          opacity: styles.opacity,
+        })}
+        className={styles.slideUp}
       >
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
