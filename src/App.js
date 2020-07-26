@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './App.scss';
-import Home from '../Home/HomeContainer';
-import About from '../About/About';
-import Skills from '../Skills/Skills';
-import MainLayout from '../MainLayout/MainLayout';
+import styles from './styles/App.scss';
+import Home from './components/Views/Home/HomeContainer';
+import About from './components/Views/About/About';
+import Skills from './components/Views/Skills/Skills';
+import MainLayout from './components/Layout/MainLayout/MainLayout';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {AnimatedSwitch} from 'react-router-transition';
 
@@ -12,7 +12,7 @@ const App = () => (
     <MainLayout>
       <AnimatedSwitch
         atEnter={{ translateY: 200, opacity: 0 }}
-        atLeave={{ translateY: 0, opacity: 0 }}
+        atLeave={{ translateY: 200, opacity: 0 }}
         atActive={{ translateY: 0, opacity: 1 }}
         mapStyles={styles => ({
           transform: `translateY(${styles.translateY}px)`,

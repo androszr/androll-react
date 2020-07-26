@@ -1,10 +1,10 @@
 import React from 'react';
 import Container from '../Container/Container';
 import styles from './Header.scss';
-import Logo from '../Logo/Logo';
+import Logo from '../../Features/Logo/Logo';
 import PropTypes from 'prop-types';
 import {NavLink, Link} from 'react-router-dom';
-import {settings} from '../../data/dataStore';
+import {settings} from '../../../data/dataStore';
 
 const Header = ({icon}) => (
   <header className={styles.component}>

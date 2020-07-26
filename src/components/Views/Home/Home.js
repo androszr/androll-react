@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.scss';
 //import PropTypes from 'prop-types';
-import {settings} from '../../data/dataStore';
+import {settings} from '../../../data/dataStore';
 
 class Home extends React.Component {
   static propTypes = {
