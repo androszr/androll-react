@@ -1,0 +1,14 @@
+@import '../../styles/settings.scss';
+
+.component {
+  position: absolute;
+  bottom: 0%;
+  left: 5%;
+  height: 50px;
+  color: $color-light;
+  display: flex;
+  align-items: center;
+  p {
+    margin: 0;
+  }
+}

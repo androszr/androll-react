@@ -12,7 +12,9 @@ class Home extends React.Component {
   render() {
     return (
       <main className={styles.component}>
-        <img className={styles.image} src={settings.homeImage} alt='Palm Image Header'></img>
+        <div className={styles.wave}>
+          <img className={styles.image} src={settings.homeImage} alt='Palm Image Header'></img>
+        </div>
       </main>
     );
   }

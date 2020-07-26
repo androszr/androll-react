@@ -1,7 +1,8 @@
 import React from 'react';
+import styles from './Skills.scss';
 
 const Skills = () => (
-  <div>
+  <div className={styles.component}>
     
   </div>
 );

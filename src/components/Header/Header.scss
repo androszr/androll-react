@@ -3,21 +3,22 @@
 .component {
   padding: ($base-size * 1.5) 0;
   height: 150px;
+  background-color: $color-one;
 
   nav {
     
     a {
-      color: $color-one;
+      color: $color-light;
       text-decoration: none;
       font-size: 24px;
       margin-right: 20px;
       transition: $transition;
-      border-bottom: 1px solid $color-light;
+      border-bottom: 1px solid $color-one;
       &:hover {
-        border-bottom: 1px solid $color-one;
+        border-bottom: 1px solid $color-light;
       }
       &:global(.active) {
-        border-bottom: 2px solid $color-one;
+        border-bottom: 2px solid $color-light;
       }
     }
   }
@@ -33,7 +34,7 @@
 
 .logo {
   text-decoration: none;
-  color: $color-one;
+  color: $color-light;
   margin-right: 20px;
 
 }

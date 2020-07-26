@@ -3,12 +3,22 @@
 .component {
   height: calc(100vh - 150px);
   position: relative;
-  .image {
+  .wave {
+    background-color: $color-light;
     position: absolute;
     bottom: 0%;
     right: 0%;
     height: 600px;
-    max-height: 80vh;
+    max-height: 70vh;
+    border-radius: 100% 0 0 0;
+    width: 900px;
+    
+  }
+  .image {
+    height: 90%;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
   }
 }
 
