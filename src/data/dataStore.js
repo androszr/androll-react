@@ -1,7 +1,8 @@
-//import spaceImg from '../images/space.png';
+import palmLaptop from '../images/main-image.png';
 
 export const settings = {
   defaultNavIcon: 'code',
+  homeImage: palmLaptop,
 };
 
 export const pageContents = {

@@ -30,7 +30,8 @@
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^1.4.0",
     "redux": "^4.0.5",
-    "shortid": "^2.2.15"
+    "shortid": "^2.2.15",
+    "url-loader": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",

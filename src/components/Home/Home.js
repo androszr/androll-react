@@ -6,19 +6,14 @@ import {settings} from '../../data/dataStore';
 class Home extends React.Component {
 
   static propTypes = {
-    title: PropTypes.string,
-    subtitle: PropTypes.string,
-    lists: PropTypes.array,
-    addList: PropTypes.func,
+
   }
   
 
   render() {
-    const {title, subtitle} = this.props;
     return (
       <main className={styles.component}>
-        <h1 className={styles.title}>{title}</h1>
-        <h2 className={styles.subtitle}>{subtitle}</h2>
+        <img className={styles.image} src={settings.homeImage} alt='Palm Image Header'></img>
       </main>
     );
   }

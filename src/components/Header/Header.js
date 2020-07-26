@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
 import styles from './Header.scss';
-import Icon from '../Icon/Icon';
+import Logo from '../Logo/Logo';
 import PropTypes from 'prop-types';
 import {NavLink, Link} from 'react-router-dom';
 import {settings} from '../../data/dataStore';
@@ -11,7 +11,7 @@ const Header = ({icon}) => (
     <Container>
       <div className={styles.wrapper}>
         <Link className={styles.logo} to='/'>
-          <Icon name={icon}></Icon>
+          <Logo name={icon} />
         </Link>
         <nav>
           <NavLink exact to='/' activeClassName='active'>Home</NavLink>

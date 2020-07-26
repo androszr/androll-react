@@ -1,36 +1,40 @@
 @import '../../styles/settings.scss';
 
 .component {
-  background: darken($color-dark, 3%);
   padding: ($base-size * 1.5) 0;
+  height: 150px;
 
-  a {
-    color: $color-light;
-    text-decoration: none;
-    font-weight: 700;
-    margin-right: $base-size;
-    transition: $transition;
-    &:hover {
-      color: $color-success;
-    }
-    &:global(.active) {
-      color: $color-warning;
-    }
-  }
   nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+    a {
+      color: $color-one;
+      text-decoration: none;
+      font-size: 24px;
+      margin-right: 20px;
+      transition: $transition;
+      border-bottom: 1px solid $color-light;
+      &:hover {
+        border-bottom: 1px solid $color-one;
+      }
+      &:global(.active) {
+        border-bottom: 2px solid $color-one;
+      }
+    }
   }
+  
+  
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: to-upper-case($string: "");
 }
 
 .logo {
-  font-size: 24px;
+  text-decoration: none;
+  color: $color-one;
+  margin-right: 20px;
+
 }
 
