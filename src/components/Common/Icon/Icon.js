@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Icon = props => (
 
-  <i className={`fad fa-${props.name}` + (props.name=='bars' ? ' ' + styles.pointer : '')}></i>
+  <i className={`${props.name}` + (props.name=='bars' ? ' ' + styles.pointer : '')}></i>
 );
 
 Icon.propTypes = {

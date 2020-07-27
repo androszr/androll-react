@@ -1,0 +1,27 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2px;
+  color: $color-light;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding-bottom: 40px;
+  .line {
+    position: absolute;
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 1px;
+    background-color: $color-gray-two;
+
+  }
+}
+
+
+

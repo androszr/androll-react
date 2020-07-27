@@ -4,6 +4,7 @@ import Home from './components/Views/Home/HomeContainer';
 import About from './components/Views/About/AboutContainer';
 import Skills from './components/Views/Skills/SkillsContainer';
 import Contact from './components/Views/Contact/ContactContainer';
+import Portfolio from './components/Views/Portfolio/PortfolioContainer';
 import MainLayout from './components/Layout/MainLayout/MainLayout';
 import {BrowserRouter, Route} from 'react-router-dom';
 import {AnimatedSwitch} from 'react-router-transition';
@@ -23,6 +24,7 @@ const App = () => (
       >
         <Route exact path='/' component={Home} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/portfolio' component={Portfolio} />
         <Route exact path='/contact' component={Contact} />
         <Route exact path='/skills' component={Skills} />
       </AnimatedSwitch>

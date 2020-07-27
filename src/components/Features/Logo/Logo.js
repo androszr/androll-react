@@ -4,7 +4,7 @@ import styles from './Logo.scss';
 
 const Logo = () => (
   <div className={styles.component}>
-    <p className={styles.headerName}><Icon name='code'/> Robert Androsz</p>
+    <p className={styles.headerName}><Icon name='fad fa-code'/> Robert Androsz</p>
     <div className={styles.logoText}>
       <p>E-commerce Manager</p>
       <p>Product Manager</p>

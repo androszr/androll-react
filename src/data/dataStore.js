@@ -34,6 +34,12 @@ export const pageContents = {
 
     },
   },
+  portfolio: {
+
+  },
+  experience: {
+
+  },
 };
 
 export const listData = [
