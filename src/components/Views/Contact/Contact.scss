@@ -2,4 +2,21 @@
 
 .component {
   min-height: calc(100vh - 150px);
+  .wave {
+    background-color: $color-light;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 600px;
+    max-height: 70vh;
+    border-radius: 0 100% 0 0;
+    width: 700px;
+    
+  }
+  .image {
+    height: 90%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+  }
 }

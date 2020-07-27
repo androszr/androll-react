@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    &:after {
+      position: absolute;
+      content: ' ';
+      bottom: -30px;
+      left: 50%;
+      width: 50px;
+      height: 3px;
+      transform: translateX(-50%);
+      background-color: $color-gray-two;    
+    }
+  }
+}

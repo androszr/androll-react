@@ -1,8 +1,10 @@
-import palmLaptop from '../images/main-image.png';
+import palmLaptopImage from '../images/main-image.png';
+import palmsImage from '../images/main-image-3.png';
 
 export const settings = {
   defaultNavIcon: 'code',
-  homeImage: palmLaptop,
+  homeImage: palmLaptopImage,
+  contactImage: palmsImage,
 };
 
 export const pageContents = {
