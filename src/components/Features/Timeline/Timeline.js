@@ -1,11 +1,11 @@
 import React from 'react';
-import TimelineColumn from '../TimelineColumn/TimelineColumn';
+import TimelineColumn from '../TimelineColumn/TimelineColumnContainer';
 import TimelinePlaceholder from '../TimelinePlaceholder/TimelinePlaceholder';
 import styles from './Timeline.scss';
 
 const Timeline = () => (
   <div className={styles.component}>
-    <TimelineColumn orientation='left' />
+    <TimelineColumn position='freelance' />
     <TimelinePlaceholder />
     <TimelinePlaceholder />
     <TimelineColumn orientation='right' />

@@ -37,9 +37,14 @@ export const pageContents = {
   portfolio: {
 
   },
-  experience: {
-
-  },
+  experience: [
+    {
+      dates: '2019-now',
+      position: 'freelance',
+      descOne: '',
+      descTwo: '',
+    },
+  ],
 };
 
 export const listData = [

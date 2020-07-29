@@ -1,5 +1,83 @@
 @import '../../../styles/settings.scss';
 
 .component {
-
-}
+  &:nth-of-type(odd) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    padding-right: 20px;
+    padding-top: 50px;
+    background-color: $color-one;
+    .dates {
+      text-align: right;
+    }
+    .company {
+      width: 200px;
+      margin-left: auto;
+    }
+    .description {
+      border-left: 1px solid $color-gray-two;
+      text-align: left;
+      margin-left: auto;
+      padding-left: 15px;
+    }
+  }
+  &:nth-of-type(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 50px;
+    background-color: $color-one;
+    .dates {
+      text-align: left;
+    }
+    .company {
+      width: 200px;
+      margin-right: auto;
+    }
+    .description {
+      border-right: 1px solid $color-gray-two;
+      text-align: left;
+      margin-right: auto;
+      padding-right: 15px;
+    }
+  }
+  
+  .company {
+    background-color: $color-gray-two;
+    color: $color-one;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    i {
+      padding-left: 20px;
+    }
+  }
+  .roleDetails {
+    overflow: hidden;
+    .description {
+      margin-top: 20px;
+      font-size: 16px;
+      list-style: none;
+      max-width: 350px;
+      transition: all ease-in-out 0.3s;
+      li {
+        padding-top: 5px;
+        &:first-of-type {
+          padding-top: 0px;
+        }
+      }
+    }
+    .description-hidden {
+      opacity: 0;
+      margin-bottom: -400px;
+    }
+  }
+  }
+  
