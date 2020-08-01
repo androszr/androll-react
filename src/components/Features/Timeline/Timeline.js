@@ -5,14 +5,14 @@ import styles from './Timeline.scss';
 
 const Timeline = () => (
   <div className={styles.component}>
-    <TimelineColumn position='freelance' />
+    <TimelineColumn position='Freelance' />
     <TimelinePlaceholder />
     <TimelinePlaceholder />
-    <TimelineColumn orientation='right' />
-    <TimelineColumn orientation='left' />
+    <TimelineColumn position='IKEA' preview='hidden' />
+    <TimelineColumn position='Cateromarket' preview='hidden' />
     <TimelinePlaceholder />
     <TimelinePlaceholder />
-    <TimelineColumn orientation='right' />
+    <TimelineColumn position='Media Saturn' preview='hidden' />
     <div className={styles.line}></div>
   </div>
 );

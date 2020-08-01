@@ -1,25 +1,50 @@
 import React from 'react';
 import styles from './TimelineColumn.scss';
-//import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import Icon from '../../Common/Icon/Icon';
 
-const TimelineColumn = () => (
-  
-  <div className={styles.component}>
-    <span className={styles.dates}>2019 - now</span>
-    <p className={styles.company} data-target="freelance-description">Freelance <Icon name='fal fa-chevron-down'/></p>
-    <div className={styles.roleDetails}>
-      <ul className={styles.description}>
-        <li>Consulting on web development and e-commerce related topics.</li>
-        <li>Preparation and implementation of web pages and native web application.</li>
-      </ul>
-    </div>
-  </div>
-  
-);
+class TimelineColumn extends React.Component {
+  static propTypes = {
+    dates: PropTypes.string,
+    position: PropTypes.string,
+    descOne: PropTypes.string,
+    descTwo: PropTypes.string,
+    preview: PropTypes.string,
+  };
+  state = {
+    visible: this.props.preview || '',
+  };
 
-TimelineColumn.propTypes = {
+  previewToggle = () => {
+    let targetState = 'hidden';
+    if (this.state.visible=='hidden') {
+      targetState = '';
+    } 
+    this.setState({
+      visible: targetState,
+    });
+
+  }
+
   
-};
+
+  render() {
+
+    const {dates, position, descOne, descTwo} = this.props;
+    return (
+      <div className={styles.component}>
+        <span className={styles.dates}>{dates}</span>
+        <p className={styles.company} data-target="freelance-description" onClick={this.previewToggle}>{position} {this.state.visible=='hidden' ? <Icon name='fal fa-chevron-up'/> : <Icon name='fal fa-chevron-down'/>}</p>
+        <div className={styles.roleDetails} style={this.state.visible=='hidden' ? {display:'none'} : {}}>
+          <ul className={styles.description}>
+            <li>{descOne}</li>
+            <li>{descTwo}</li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+}
+
 
 export default TimelineColumn;
