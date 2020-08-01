@@ -35,8 +35,8 @@ class TimelineColumn extends React.Component {
       <div className={styles.component}>
         <span className={styles.dates}>{dates}</span>
         <p className={styles.company} data-target="freelance-description" onClick={this.previewToggle}>{position} {this.state.visible=='hidden' ? <Icon name='fal fa-chevron-up'/> : <Icon name='fal fa-chevron-down'/>}</p>
-        <div className={styles.roleDetails} style={this.state.visible=='hidden' ? {display:'none'} : {}}>
-          <ul className={styles.description}>
+        <div className={styles.roleDetails}>
+          <ul className={styles.description} style={this.state.visible=='hidden' ? {opacity:0, marginBottom: '-400px'} : {}}>
             <li>{descOne}</li>
             <li>{descTwo}</li>
           </ul>

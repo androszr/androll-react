@@ -16,24 +16,22 @@ export const pageContents = {
     github: 'https://github.com/androszr/',
   },
 
-  skills: {
-    eCommerce: {
-
+  skills: [
+    { 
+      id: 'eCommerce',
+      name: 'E-Commerce',
     },
-    productManagement: {
-
+    { id: 'productManagement',
+      name: 'Product Management',
     },
-    webDevelopment: {
-
+    { id: 'webDevelopment',
+      name: 'Web Development',
     },
-    dataScience: {
-
+    { id: 'dataScience',
+      name: 'Data Science', 
     },
+  ],
     
-    about: {
-
-    },
-  },
   portfolio: {
 
   },
