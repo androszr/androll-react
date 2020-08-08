@@ -28,7 +28,6 @@
   }
   .cardImage {
     position: relative;
-    width: 300px;
     height: 130px;
     background-color: $color-light;
     margin-bottom: 1px;
@@ -58,5 +57,35 @@
         cursor: pointer;
       }
     }
+  }
+}
+
+@include desktop {
+  .component {
+    .cardHeading {
+      h5 {
+        font-size: 18px;
+      }
+    }
+    .cardSection {
+      .tags {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .component {
+    &:hover {
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@include mobile {
+  .component {
+    min-height: auto;
   }
 }

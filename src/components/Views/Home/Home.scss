@@ -22,3 +22,14 @@
   }
 }
 
+
+@include tablet {
+  .component {
+    .wave {
+      height: 600px;
+      max-height: 50vh;
+      width: 500px
+    }
+  }
+}
+

@@ -39,3 +39,46 @@
 
 }
 
+@include tablet {
+  .component {
+    nav {
+      a {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .component {
+    height: auto;
+    nav {
+      a {
+        font-size: 14px;
+        margin-right: 0;
+        display: block;
+        margin-top: 10px;
+        padding-right: 5px;
+        &:first-of-type {
+          margin-top: 0px;
+        }
+        border-right: 1px solid transparent;
+        border-bottom: 0;
+        &:hover {
+          border-right: 1px solid $color-light;
+          border-bottom: 0;
+        }
+        &:global(.active) {
+          border-bottom: 0;
+          border-right: 2px solid $color-light;
+          &:hover {
+            border-right: 2px solid $color-light;
+            border-bottom: 0;
+      }
+        }
+      }
+      
+    }
+  }
+}

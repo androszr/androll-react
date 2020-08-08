@@ -1,3 +1,5 @@
+@import '../../../styles/settings.scss';
+
 .component {
   p {
     margin: 0;
@@ -9,5 +11,29 @@
   .logoText {
     font-size: 16px;
     padding-left: 55px;
+  }
+}
+
+@include tablet {
+  .component {
+    .headerName {
+      font-size: 24px;
+    }
+    .logoText {
+      font-size: 14px;
+      padding-left: 39px;
+    }
+  }
+}
+
+@include smallMobile {
+  .component {
+    .headerName {
+      font-size: 20px;
+    }
+    .logoText {
+      font-size: 12px;
+      padding-left: 32px;
+    }
   }
 }
