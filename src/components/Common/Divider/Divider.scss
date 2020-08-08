@@ -1,0 +1,30 @@
+
+@import '../../../styles/settings.scss';
+
+.component {
+  position: relative;
+  width: 100%;
+  .dividerLeft {
+    left: -15px;
+  }
+  .dividerHole {
+    position: absolute;
+    top: -12px;
+    padding: 0px;
+    height: 25px;
+    width: 25px;
+    border-radius: 100%;
+    background: $color-one;
+  }
+  .innerDivider {
+    width: 100%;
+    margin: auto;
+    height: 2px;
+    background: linear-gradient(to right, $color-one 50%, transparent 50%);
+    background-size: 10px 8px, 100% 2px;
+    opacity: .2;
+  }
+  .dividerRight {
+    right: -15px;
+  }
+}

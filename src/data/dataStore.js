@@ -1,5 +1,9 @@
 import palmLaptopImage from '../images/main-image.png';
 import palmsImage from '../images/main-image-3.png';
+import beach from '../images/beach.png';
+import lake from '../images/lake.png';
+import landscape from '../images/landscape.png';
+import desert from '../images/desert.png';
 
 export const settings = {
   defaultNavIcon: 'code',
@@ -20,15 +24,39 @@ export const pageContents = {
     { 
       id: 'eCommerce',
       name: 'E-Commerce',
+      duration: '8 years',
+      image: landscape,
+      icon: 'fad fa-shopping-basket',
+      tags: [
+        'sales', 'merchandising', 'marketing-automation', 'personalization', 'seo', 'sem', 'analytics', 'tests', 'content',
+      ],
     },
     { id: 'productManagement',
       name: 'Product Management',
+      duration: '5 years',
+      image: desert,
+      icon: 'fad fa-layer-group',
+      tags: [
+        'vision', 'strategy', 'communication', 'negotiation', 'strategy', 'data-driven', 'storytelling', 'agile', 'scrum',
+      ],
     },
     { id: 'webDevelopment',
       name: 'Web Development',
+      duration: '3 years',
+      image: lake,
+      icon: 'fad fa-browser',
+      tags: [
+        'html', 'sass', 'javascript', 'es6', 'git', 'react', 'ux', 'aesthetics', 'analytics', 'seo', 'testing', 'business-experience',
+      ],
     },
     { id: 'dataScience',
       name: 'Data Science', 
+      duration: '2 years',
+      image: beach,
+      icon: 'fad fa-chart-line',
+      tags: [
+        'cleaning', 'analyzing', 'visualizing', 'feature-engineering', 'predictive-modelling', 'sql', 'r', 'azure-ml', 'business-experience',
+      ],
     },
   ],
     

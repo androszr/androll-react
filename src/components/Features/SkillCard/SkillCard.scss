@@ -1,0 +1,62 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  max-width: 300px;
+  min-height: 380px; 
+  background-color: $color-light;
+  border-radius: 10px;
+  border-top: 10px solid $color-four;
+  color: $color-dark-two;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 1s;
+  margin-top: 20px;
+  transition: margin 0.5s;
+  &:hover {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .cardHeading {
+    padding: 10px 10px 5px;
+    text-align: center;
+    
+    h5 {
+      color: $color-one;
+      font-size: 24px;
+      font-style: $font-logo;
+    }
+  }
+  .cardImage {
+    position: relative;
+    width: 300px;
+    height: 130px;
+    background-color: $color-light;
+    margin-bottom: 1px;
+    overflow: hidden;
+    
+    img {
+      position: absolute;
+      width: 100%;
+      bottom: -2%;
+
+    }
+    
+  }
+  .cardSection {
+    padding: 15px 20px;
+    text-align: center;
+    min-height: 100px;
+    position: relative;
+    .iconStyle {
+      font-size: 1.5rem;
+    }
+    
+    .tags {
+      color: $color-dark-two;
+      span {
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+}
