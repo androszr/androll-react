@@ -53,7 +53,7 @@
     height: 400px;
     max-height: 40vh;
     border-radius: 0 100% 0 0;
-    width: 500px;
+    width: 400px;
     
   }
   .image {
@@ -61,5 +61,32 @@
     position: absolute;
     left: 0%;
     bottom: 0%;
+  }
+}
+
+@include tablet {
+  .component {
+    .grid {
+      .col {
+        padding: 10px 10px;
+      }
+
+    }
+  }
+}
+
+@include mobile {
+  .component {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 10px;
+
+    }
+  }
+}
+
+@media ( max-height: 760px ) {
+  .wave {
+    display: none;
   }
 }

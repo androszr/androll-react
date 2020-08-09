@@ -22,7 +22,7 @@
     
     h5 {
       color: $color-one;
-      font-size: 24px;
+      font-size: 22px;
       font-style: $font-logo;
     }
   }
@@ -47,6 +47,7 @@
     min-height: 100px;
     position: relative;
     .iconStyle {
+      margin: 10px 0;
       font-size: 1.5rem;
     }
     
@@ -64,7 +65,7 @@
   .component {
     .cardHeading {
       h5 {
-        font-size: 18px;
+        font-size: 16px;
       }
     }
     .cardSection {
@@ -87,5 +88,11 @@
 @include mobile {
   .component {
     min-height: auto;
+    .cardSection {
+      min-height: auto;
+      .iconStyle {
+        display: none;
+      }
+    }
   }
 }

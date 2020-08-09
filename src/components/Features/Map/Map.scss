@@ -1,0 +1,21 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  max-height: 800px;
+  display: flex;
+  padding-top: 50px;
+  svg {
+    width: 100%;
+    path {
+      fill: $color-dark-two;
+    }
+    .AU, .US, .AR, .IT {
+      fill: $color-gray-two;
+      cursor: pointer;
+      &:hover {
+        fill: $color-three;
+        
+      }
+    }
+  }
+}
