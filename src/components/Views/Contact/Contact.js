@@ -5,9 +5,11 @@ import PageTitle from '../../Common/PageTitle/PageTitle';
 import Icon from '../../Common/Icon/Icon';
 import PropTypes from 'prop-types';
 import {settings} from '../../../data/dataStore';
+import {ReactTitle} from 'react-meta-tags';
 
 const Contact = ({contact}) => (
   <div className={styles.component}>
+    <ReactTitle title='Contact | Robert Androsz | Get in touch'/>
     <Container>
       <PageTitle title='Contact' />
       <div className={styles.grid}>
