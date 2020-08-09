@@ -11,6 +11,14 @@ class Home extends React.Component {
   
 
   render() {
+
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    window.addEventListener('resize', () => {
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+
     return (
       <main className={styles.component}>
         <ReactTitle title='Robert Androsz - E-commerce, Product and Web Development, Data Science'/>
